@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.judul {
+    display: flex;
+    height: 70vh;
+    position: relative;
+    align-items: center;
+}
+
+.latar-judul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.double {
+    position: relative;
+    color: #000000;
+    text-shadow: 2.5px 2.5px 2.5px #49eec5;
+    margin: 0;
+    border-bottom: 10px;
+    z-index: 1;
+    font-family: "spicy rice", sans-serif;
+    text-align: center;
+}
+
+#bagian_atas {
+    font-size: 60px;
+    text-align: center;
+}
+
+#bagian_bawah {
+    font-size: 25px;
+}
+
+main {
+    padding-top: 30px;
+}
+
+header nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;  
+    background-color: rgb(93, 250, 224);
+    padding: 9px;
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul a{
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: aqua;
+}
+
+.content {
+    position: relative; 
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-radius: 20px;
+    border: solid 2px rgb(79, 255, 246);
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.824);
+    margin: 18px;
+}
+
+#Proses, #warna, #Jenis, #Fakta_Menarik, #mitos_dan_legenda {
+    background-color: rgb(104, 245, 255);
+    color: rgba(0, 0, 0, 0.824);
+    text-align: center;
+    text-shadow: 2.5px 1.5px 2.5px rgb(255, 255, 255);
+    text-align: center;
+    font-size: 28px;
+    padding: 10px; 
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-radius: 20px 20px 0px 0px;
+    border: solid 2px rgb(0, 0, 0);
+}
+
+#proses, #warna, #jenis, #fakta_menarik, #ml {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    border-radius: 0px 0px 15px 15px;
+    border: solid 2px rgba(0, 0, 0, 0.824);
+    font-family: "Poppins", sans-serif;
+}
+
+.artc-gambar img {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.baris_1, .baris_2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.baris_1 figure, .baris_2 figure {
+    flex: 1;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.baris_1 figure img, .baris_2 figure img {
+    width: 50%;
+    flex: 1;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#gambar_1, #gambar_2 {
+    margin-right: 10px;
+}
+#gambar_3, #gambar_4 {
+    margin-left: 10px;
+}
+
+figcaption {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .content, aside.content {
+        flex: 1; 
+        border-radius: 20px;
+        border: solid 2px rgb(79, 255, 246);
+        box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.824);
+        padding: 10px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        main {
+            flex-flow: column-reverse;
+        }
+
+        main-aside {
+            align-self: center;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        nav ul {
+            justify-content: center;
+        }
+    
+        .main-content  {
+            flex-direction: column;
+        }
+    
+        .artc-gambar .baris-1, .baris-2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content, aside.content {
+            flex: 1 0 100%;
+        }
+
+}
+
+aside figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex; 
+    position: relative;
+}
+
+aside figure {
+    width: 100%;
+    height: 300px;  
+    
+}
+
+footer {
+    background-color: rgba(61, 249, 255, 0.824);
+    color: #000000;
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 18px;
+}
